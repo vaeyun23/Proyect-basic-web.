@@ -1,0 +1,141 @@
+/* Fuente de letra general */
+*{font-family: 'Rubik', sans-serif;}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+a{
+    color: #000000 !important;
+}
+
+/* añadir barra lateral para buscar info mas rapido*/
+aside{
+    width: 17%;
+    float: left;
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: #BECCD1;
+}
+
+/* para añadir el espacio entre el borde y las cosas */
+section{
+    padding: 5%;
+    width: 80%;
+    float: right;
+    box-sizing: border-box;
+    background-color: #BECCD1;
+    text-align: justify;
+}
+
+#Pokemon{
+    width: 100%;
+}
+
+/* hacer que la pagina no explote con el aside y section */
+@media (max-width:800px) {
+    ul{
+        margin: 0;
+        padding-left: 10%;
+        list-style-position: inside;
+        list-style-image: none;
+        list-style-type: none;
+    }
+}
+
+/* Para que la imagen pueda acoplase al tamaño de la ventana */
+header,img{width: 100%;}
+
+/*Para cambiar el color de las tarjetas*/
+.card.mb-3 {
+    background-color: #522029;
+    color: white;
+  }
+
+.card{
+    background-color: #522029;
+    color: white;
+}
+
+.io{
+    width: 50%;
+    display:block;
+    margin:auto;
+}
+
+footer {
+    clear: both; /* Limpiar los elementos flotantes */
+    background-color: #BECCD1;
+    color: #000000;
+    padding: 5%;
+    text-align: center;
+    position: relative; /* Establecer posición relativa */
+    bottom: 0; /* Colocar en la parte inferior */
+    width: 100%; /* Asegurar que ocupe el ancho completo */
+  }
+  
+  #social-icons {
+    margin-top: 10px;
+  }
+  
+  #social-icons img {
+    width: 30px;
+    margin: 0 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #social-icons img:hover {
+    transform: scale(1.2);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555; /* Cambia el color del texto de la etiqueta */
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Evita que el borde afecte el ancho total */
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Evita que el borde afecte el ancho total */
+  }
+  
+  .forl {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agrega transición al color de fondo */
+  }
+  
+  /* Estilos adicionales para mayor decoración */
+  .container::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: #4CAF50; /* Línea decorativa de color */
+    margin-bottom: 20px;
+  }
+  
+  /* Añade un borde alrededor del formulario */
+  form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
